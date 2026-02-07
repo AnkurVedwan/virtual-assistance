@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ubuntu", sans-serif;
+}
+nav{
+    background-color: black;
+    display: flex;
+    color: white;
+    padding: 0.5em;
+    font-family: "ubuntu", sans-serif;
+}
+.spotify-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 1.1em;
+}
+.nav-options{
+    padding: 1em;
+    padding-left: 1em;
+    display: flex;
+    gap: 1.2em;
+}
+.main{
+    background-color: antiquewhite;
+    height: 110vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    background-image: url(assets/bg.jpg);
+    background-size:cover;
+    height: 95%;
+    width: 75%;
+    border-radius: 1.5em;
+    color: white;
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.footer{
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    padding: 1em;
+    gap: 0.5em;
+}
+.songs{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 0.3em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    width: 50%;
+    border-radius: 1.5em;
+}
+.songs img{
+    border-radius: 50%;
+}
+.song-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.footer input{
+    width: 80%;
+}
+.footer i{
+    color: white;
+    font-size: 2.5em
+}
+.song-info{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.song-img{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.song-cover{
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.active-img{
+    animation: circle 10s infinite;
+}
+@keyframes circle {
+    50%{
+        transform: rotate(360deg);
+    }
+}
+.gif-val{
+    opacity: 0;
+}
+.songs{
+    cursor: pointer;
+}
+.songs:hover{
+    scale: 1.1;
+}
+.cur-song{
+    opacity: 0;
+}
+.start-btn{
+    position: absolute;
+    left: 40%;
+    top: 2%;
+    height: 3em;
+    width: 7em;
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgb(88, 88, 88);
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    transition: 0.5s ease;
+}
+button:hover{
+    scale: 1.1;
+}
+.stop-btn{
+    position: absolute;
+    left: 47%;
+    top: 2%;
+    height: 3em;
+    width: 7em;
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgb(88, 88, 88);
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    transition: 0.5s ease;
+}

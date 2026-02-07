@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    font-family: "ubuntu", sans-serif;
+    gap: 20px;
+}
+img{
+    translate: -15% -12%;
+}
+button{
+    background-image: linear-gradient(to right,rgb(145, 53, 53),rgb(50, 50, 136));
+    height: 3em;
+    color: white;
+    width: 28%;
+    translate: -5%;
+    border: 0;
+    border-radius: 1.5em;
+    font-size: 1.1em;
+    padding: 1em;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    font-family: "ubuntu", sans-serif;
+    border: 1px solid white;
+    text-align: center;
+}
+button:hover{
+    scale: 1.1;
+    letter-spacing: 2px;
+}
+h1{
+    color: white;
+}
+#name{
+    color: rgb(239, 57, 87);
+}
+#work{
+    color: rgb(73, 176, 241);
+}
+.gif{
+    position: absolute;
+    top: 80%;
+    z-index: 1;
+    scale: 0;
+    transition: 0.5s ease;
+}
